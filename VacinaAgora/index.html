@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styleVacina.css"></link>
+    <script src="/javscript/javascriptVAcina.js"></script>
+    <title>Home - Vacina Agora</title>
+</head>
+
+<body>
+    <!-- header titulo logo-->
+    <header class="header col-12 col-m-12 col-p-12">
+        <img id="logo" src="imagem\vacina_CT2.png" >
+        <div id="espacoHeader"></div>
+        <div id="tituloHeader">
+            <div id="tituloCampanha ">Campanha</div>
+            <div id="tituloVacina"> Vacina Agora</div>
+            <div id="tituloCidade">São caetano do Sul</div>
+        </div>
+    </header>
+
+    <div class="row">
+        <!-- conteiner titulo agendamento digital-->
+        <div class="tituloAgendamento">Agendamento digital</div>
+
+        <!--quadro publico disponivel -->
+        <div id="conteinerGrupo">
+
+            <!-- faixa de idade-->
+            <div class="idadeBotao">
+                <p class="btnTitulo">Publico Geral:</p>
+                <a href="php\agendaCaduser.php"><input type="button" id="btn1"  class="btnGrupo" value="12 a 14 anos"></a>
+                <a href="php\agendaCaduser.php"><input type="button" id="btn2" class="btnGrupo" value="15 a 17 anos"></a>
+                <a href="php\agendaCaduser.php"><input type="button" id="btn3" class="btnGrupo" value="18 a 24 anos"></a>
+                <a href="php\agendaCaduser.php"><input type="button" id="btn4" class="btnGrupo" value="25 a 59 anos"></a>
+                <a href="php\agendaCaduser.php"><input type="button" id="btn5" class="btnGrupo" value="60 anos ou mais"></a>
+                <br>
+            </div>
+
+            <hr width="75%">
+
+            <!-- comorbidades-->
+            <div class="idadeBotao">
+                <p class="btnTitulo">Pessoas Com Comorbidades, Deficientes, Gestantes ou Puerperas: </p>
+                <a href="php\agendaCaduser.php"></a><input type="button" id="btn6" class="btnGrupo" value="12 a 17 anos"></a>
+                <a href="php\agendaCaduser.php"></a><input type="button" id="btn7" class="btnGrupo" value="18 a 59 anos"></a>
+                <br>
+            </div>
+
+            <hr width="75%">
+
+            <!-- profissionais-->
+            <div class="idadeBotao">
+                <p class="btnTitulo">Profissionais:</p>
+                <a href="php\agendaCaduser.php"><input type="button" id="btn8" class="btnGrupo" value="Da Saude"></a>
+                <a href="php\agendaCaduser.php"><input type="button" id="btn9" class="btnGrupo" value="Da Educação"></a>
+                <a href="php\agendaCaduser.php"><input type="button" id="btn10" class="btnGrupo" value="Motoristas e cobradores de onibus"></a>
+            </div>
+        </div>
+
+        <!-- conteiner quadros informações-->
+        <div class="divQuadros" class="col-12 col-m-12 col-p-12">
+            <a href="php/vacinaTipos.php">
+                <div class="itemQuadro">Tipos de vacina<img src="imagem/vacina.jpg"></div>
+            </a>
+            <a href="php/vacinaLocal.php">
+                <div class="itemQuadro">Pontos de vacinação<img src="imagem/posto2.jpg"></div>
+            </a>
+            <a href="php/vacinaIdade.php">
+                <div class="itemQuadro">Grupos e Idades<img src="imagem/idades2.jpg"></div>
+            </a>
+            <a href="php/vacinaVirus.php ">
+                <div class="itemQuadro">Sobre Covid-19<img src="imagem/virus.jpg "></div>
+            </a>
+            <a href="php/vacinaCidade.php">
+                <div class="itemQuadro">São Caetano do Sul<img src="imagem/bandeira.jpg "></div>
+            </a>
+        </div>
+
+        <!--roda pé-->
+    </div>
+
+    <footer class="col-12 col-m-12 col-p-12 ">
+        @AVP - 2021 - Escola técnica Alcina Dantas Feijão
+        <a href="php/loginVacina.php" class="loginEntrar">Login</a>
+    </footer>
+</body>
+
+</html>

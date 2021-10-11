@@ -1,0 +1,375 @@
+* {
+    box-sizing: boder-box;
+    margin:0%;
+    padding:0%;
+}
+
+html,
+body {
+    height:100%;
+    background: lightsteelblue;
+    margin: 0%;
+}
+
+/* Formularios*/
+
+.formAgenda{
+
+    margin: 0%;
+    padding: 0%;
+    text-align:justify;
+}
+
+label{
+    margin: auto;
+    padding: auto;
+}
+
+input {
+    margin: auto .6% auto 0%;
+    padding: 0%;
+}
+fieldset{
+    margin: .2% 2%;
+    padding:auto;
+    border: unset;
+}
+
+/*header titulos logo*/
+
+.header {
+    color: whitesmoke;
+    background-color: lightslategrey;
+    height: 100px;
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+}
+
+
+/*  logo */
+
+#logo {
+    height: 100%;
+    float: left;
+    margin: .1% .5% .1% 30%;
+    padding: 0%;
+}
+
+
+/*espaço logo titulo header*/
+
+
+/* conteiner titulos */
+
+#tituloHeader {
+    float: left;
+    width: auto;
+    height: 100%;
+    margin: .1% .2% .1% .5%;
+    padding: 0%;
+}
+
+
+/* titulo campanha */
+
+#tituloCampanha {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: .1% .2% .1% .2%;
+    padding: 0%;
+    font-size: 125%;
+}
+
+
+/* titulo vacina */
+
+#tituloVacina {
+    float: left;
+    width: auto;
+    height: auto;
+    margin: .1% .2% .1% 0%;
+    padding: 0%;
+    font-size: 250%;
+}
+
+
+/* titulo cidade */
+
+#tituloCidade {
+    float: left;
+    width: auto;
+    height: auto;
+    margin: .1% .2% .1% 17.5%;
+    padding: 0%;
+    font-size: 125%;
+}
+
+
+/* titulo agendamento*/
+
+.tituloAgendamento {
+    font-size: 24px;
+    background-color: darkslateblue;
+    text-align: center;
+    color: whitesmoke;
+    padding: .3%;
+    margin: .3% auto;
+}
+
+.btnAgenda :visited,
+.btnAgenda {
+    color: darkslateblue;
+    background-color: yellow;
+    width: max-content;
+    margin: auto;
+}
+
+
+/*botao idade*/
+
+#conteinerGrupo {
+    width: auto;
+    height: auto;
+    margin: 0% 20% .5% 20%;
+    padding: .1%;
+    text-align: center;
+    background-color: lightslategrey;
+    border: solid grey 2px;
+    
+}
+/*titulos do grupo e faixa de idade*/
+.btnTitulo {
+    background-color: none;
+    color: whitesmoke;
+    font-size: 115%;
+    padding: .3%;
+    margin: 2% 2% 1% 2%;
+}
+/* botoes do grupo e faixa de idade */
+.btnGrupo {
+    border: grey solid 2px;
+    background-color: whitesmoke;
+    color: darkslateblue;
+    font: none;
+    padding: .3%;
+}
+
+hr{
+    margin:auto ;
+}
+
+
+/* titulo info... paginas*/
+
+.tituloInformacoes,
+#tituloMaisinfo {
+    font-size: 24px;
+    background-color: none;
+    text-align: center;
+    color: darkslateblue;
+    margin: .5%;
+}
+
+
+/*quadros informações*/
+.divQuadros {
+    width:98%;
+    height: auto;
+    margin: 0% auto 0% auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.itemQuadro,
+.quadroCadastro {
+    width: 200px;
+    height: 175px;
+    color: darkslategrey;
+    background-color: lightsteelblue;
+    margin: 4px 4px;
+    padding: auto;
+    text-align: center;
+    border: solid grey 2px;
+}
+
+.divQuadros :hover,
+.tituloAgendamento :hover,
+.quadroCadastro :hover,
+.linkQuadros :hover {
+    transform: scaleX(1.03) scaleY(1.03);
+    transition-duration: .2s;
+}
+
+.divQuadros :active {
+    background-color: lightslategrey;
+    border: none;
+    color: none;
+    box-shadow: 1% 1% 1%;
+}
+
+img {
+    pointer-events: none;
+}
+
+p {
+    text-align: center;
+    color: Black;
+    pointer-events: none;
+}
+
+footer {
+    margin: .5% auto ;
+    text-align: center;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*login sair e entrar*/
+
+.loginSair,
+.loginSair :visited,
+.loginEntrar,
+.loginEntrar :visited {
+    background-color: lightslategrey;
+    color: whitesmoke;
+    padding: .3%;
+    float: right;
+    margin-right: 3%;
+    margin-left: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: center;
+    padding: 15px;
+}
+
+@media only screen and (min-width:400px) {
+    .col-p-1 {
+        width: 8.33%;
+    }
+    .col-p-2 {
+        width: 16.66%;
+    }
+    .col-p-3 {
+        width: 25%;
+    }
+    .col-p-4 {
+        width: 33.33%;
+    }
+    .col-p-5 {
+        width: 41.66%;
+    }
+    .col-p-6 {
+        width: 50%;
+    }
+    .col-p-7 {
+        width: 58.33%;
+    }
+    .col-p-8 {
+        width: 66.66%;
+    }
+    .col-p-9 {
+        width: 75%;
+    }
+    .col-p-10 {
+        width: 83.33%;
+    }
+    .col-p-11 {
+        width: 91.66%;
+    }
+    .col-p-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
